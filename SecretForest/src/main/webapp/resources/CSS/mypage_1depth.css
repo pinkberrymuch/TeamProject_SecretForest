@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#page {
+  width: 1280px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  padding-top: 20px;
+}
+a {text-decoration: none;}
+ul {list-style-type: none;}
+.basicHR {
+  background-color:#71A200;
+  height: 1px;
+  border: 0px;
+}
+
+
+/* 컨텐츠 영역 : 내용에 따라 높이 달라질 수 있음 */
+ul { text-decoration: none;}
+.selectwrap {
+  margin: 0 auto;
+  width: 600px;
+  margin-bottom: 50px;
+  margin-right:366px;
+  padding: 35px;
+  padding-right: 10px;
+}
+.selectwrap h1 {
+  text-align: center;
+  font-weight:600;
+  margin-top: -50px;
+  margin-right: 5px;
+}
+.selectBtnBox {
+  padding-top:20px;
+  display: flex;
+  font-size: 15px;
+  font-family: "맑은고딕";
+  font-weight: bold;
+}
+#selectBtn {
+  width: 200px; height: 200px;
+  text-align: center;
+  font-size: 20px;
+  background-color: #f3f3f3;
+  border: #dfdfdfa9 1px solid;
+  border-radius: 30px;
+  color: #7c7878;
+  padding-top: 30px;
+  margin-right: 150px;
+  margin-bottom: 200px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+#selectBtn:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+#selectBtn:active {background-color: #b4b0b0;}
+#selectBtn img { width: 120px; height: 120px;}
+#findPwdBtn {
+  width: 300px; height: 50px;
+  text-align: center;
+  background-color: #f3f3f3;
+  border-bottom: #000 1px solid;
+  border-right: #bebebe 1px solid;
+  border-left: #bebebe 1px solid;
+  color: #7c7878;
+  padding-top: 13px;
+}
+#findPwdBtn:active {background-color: #b3afaf;}
+
+/* 컨텐츠 영역 끝*/
