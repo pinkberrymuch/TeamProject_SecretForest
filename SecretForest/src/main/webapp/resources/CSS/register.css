@@ -65,8 +65,21 @@ th img {width: 16px; height:16px; }
   height: 35px;
   margin-left: 20px;
 }
-
-button {
+#idCheckBtn {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 35px; width:66px;
+  background-color: #ddd;
+  color: #71A200;
+  font-size: 13px;
+}
+#idCheckBtn:hover {	
+  background-color: #ccc;
+}
+#idCheckBtn:active {
+  border: 2px solid #71A200; 	
+}
+.chkBtn {
   border: none;
   text-align: center;
   background-color: #71A200;
@@ -79,10 +92,10 @@ button {
   font-size: 17px;
   cursor: pointer;
 }
-button:hover {
+.chkBtn:hover {
   background-color:#648d03;
 }
-button:active {
+.chkBtn:active {
   background-color: #dfdfdf;
   border: 2px solid #71A200;
   color: #2b2828;
