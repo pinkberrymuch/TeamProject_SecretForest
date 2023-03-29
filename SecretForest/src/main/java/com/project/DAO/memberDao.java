@@ -9,6 +9,9 @@ import com.project.Dto.memberDto;
 @Repository
 public interface memberDao {
 	
+   //아이디 중복검사는 DB를 체크해서 아이디가 존재하면 숫자가 카운트되며 중복되는 아이디가 없을 때 0을 반환한다.
+	int getId(memberDto memberDto);
+	
    //회원가입은 MemberDto를 받아서 추가되는 경우 숫자가 카운트된다.(시퀀스넘버같은 개념)
 	int addMember(memberDto memberDto);
 	

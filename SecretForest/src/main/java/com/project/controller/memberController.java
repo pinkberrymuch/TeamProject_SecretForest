@@ -16,6 +16,21 @@ public class memberController {
 	
 //각각은 중요한 정보가 오고가므로 PostMapping 처리 해준다.
 	
+	//getId는 서비스에서의 getId로부터 받아온 값에 대해 true인 경우
+	//아이디가 중복되므로 "no"를 리턴해주도록 했다.
+	@PostMapping("/getId")
+    public String getId(memberDto memberDto) {
+        boolean b = service.getId(memberDto);
+        if(b) {
+            return "no";
+        }
+
+        return "ok";
+
+    }
+	
+	
+	
 	//addMember는 회원가입이 완료되어 카운트 된 숫자가 0보다 클 경우 
 	//true를 반환한다. true일 때 회원가입이 완료되므로 "ok"를 리턴한다.
 	 @PostMapping("/addMember")

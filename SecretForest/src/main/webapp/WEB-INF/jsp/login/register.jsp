@@ -34,10 +34,7 @@
 	              <th>비밀번호<img src="resources/image/etc/check.png"></th>
 	              <td><input id="register" type="password" name="user_password" placeholder="영문,숫자,특수문자 포함 8자이상" required></td>
 	            </tr>
-	            <tr>
-	              <th>비밀번호 확인<img src="resources/image/etc/check.png"></th>
-	              <td><input id="register" type="password" name="user_password2" placeholder="영문,숫자,특수문자 포함 8자이상" required></td>
-	            </tr>
+
 	            <tr>
 	              <th>이메일</th>
 	              <td><input id="register" type="text" name="user_email"></td>
