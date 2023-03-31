@@ -22,6 +22,7 @@ public class MemberService {
 //addMember는 회원으로 등록되었을 때 true를, 어떤 이유로 인해 등록되지 않은 경우 false를 반환한다.
 	public boolean addMember(MemberDto memberDto) {
         int n = memberDao.addMember(memberDto);
+        System.out.println("n =>" + n);
         return n > 0;
     }
 	

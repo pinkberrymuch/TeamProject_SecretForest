@@ -43,11 +43,12 @@ public class MemberController {
 	//addMember는 회원가입이 완료되어 카운트 된 숫자가 0보다 클 경우 
 	//true를 반환한다. true일 때 회원가입이 완료되므로 "ok"를 리턴한다.
 	 @PostMapping("/addMember")
-	 public String addMember(MemberDto memberDto) {
+	 public String addMember(@RequestBody MemberDto memberDto) {
+		 System.out.print(memberDto.toString());
 		 logger.info("memberController addMember()");
 	        boolean b = service.addMember(memberDto);
 	        if(b) {
-	            return "ok";
+	            return "ok"; // return을 ok로 하고 jsp에서 true false로 구분하면 당연히 false 나옵니다
 	        }
 	        return "no";
 	    }

@@ -36,24 +36,24 @@
 
                 <tr>
 	              <th>이름<img src="resources/image/etc/check.png"></th>
-	              <td><input id="register_name" type="text" name="user_name" required></td>
+	              <td><input id="user_name" type="text" name="user_name" required></td>
 	            </tr>
 	            <tr>
 	              <th>비밀번호<img src="resources/image/etc/check.png"></th>
-	              <td><input id="register_pwd" type="password" name="user_password" placeholder="영문,숫자,특수문자 포함 8자이상" required></td>
+	              <td><input id="user_password" type="password" name="user_password" placeholder="영문,숫자,특수문자 포함 8자이상" required></td>
 	            </tr>
 
 	            <tr>
 	              <th>이메일</th>
-	              <td><input id="register_email" type="text" name="user_email"></td>
+	              <td><input id="user_email" type="text" name="user_email"></td>
 	            </tr>
 	            <tr>
 	              <th>휴대폰 번호<img src="resources/image/etc/check.png"></th>
-	              <td><input id="register_phone" type="text" name="user_phone" required></td>
+              <td><input id="user_phone" type="text" name="user_phone" placeholder="- 빼고 입력하세요" required></td>
 	            </tr>
 	            <tr>
 	              <th>주소<img src="resources/image/etc/check.png"></th>
-	              <td><input id="register_address" type="text" name="user_address" required></td>
+	              <td><input id="user_address" type="text" name="user_address" required></td>
 	            </tr>
 	          </table>
 	        </div>
@@ -85,24 +85,24 @@
 	            }
 	        });
 	    });
-	
 	    $("#account").click(function() {
 	        console.log('account check 클릭 ')
+	        let data = {
+	        	user_id: $("#user_id").val(),
+	        	user_name: $("#user_name").val(),
+	        	user_password: $("#user_password").val(),
+	        	user_email: $("#user_email").val(),
+	        	user_phone: $("#user_phone").val(),
+	        	user_address: $("#user_address").val()
+	        };
+	        console.log(data)
 	        $.ajax({
 	            url: "/addMember",
 	            type: "POST",
-	            data: JSON.stringify({
-	                "id": $("#user_id").val(),
-	                "name": $("#user_name").val(),
-	                "password": $("#user_password").val(),
-	                "email": $("#user_email").val(),
-	                "phone": $("#user_phone").val(),
-	                "address": $("#user_address").val()
-	            }),
+	            data: JSON.stringify(data),
 	            contentType: "application/json",
-	            dataType: "json",
 	            success: function(response) {
-	                if(response === true) {
+	                if(response === "ok") {
 	                    console.log(response);
 	                    alert("가입되었습니다!");
 	                    // location.href="login.html";
