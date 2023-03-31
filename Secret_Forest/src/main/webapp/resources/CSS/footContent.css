@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#page {
+  width: 1280px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  padding-top: 20px;
+}
+a {text-decoration: none;}
+ul {list-style-type: none;}
+.basicHR {
+  background-color:#71A200;
+  height: 1px;
+  border: 0px;
+}
+
+/*컨텐츠 영역 : 내용에 따라 높이 달라질 수 있음 */
+#contentBox {
+  margin-top: 20px;
+}
+
+#anc {margin-left: 20px;}
+.anc_in {color:#71A200; padding-left: 30px;}
+#contentBox h2 {
+  padding-left: 30px;
+}
+#hPContents {
+  padding: 30px;
+  font-size: 15px;
+}
+#banner {
+ margin-top:-90px;	
+ height: 600px;	
+}
+#banner img {
+	width: 1280px;
+	height: 600px;
+}
+
+/* 컨텐츠 영역 끝*/
