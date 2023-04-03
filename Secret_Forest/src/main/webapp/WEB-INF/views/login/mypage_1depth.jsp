@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="/resources/CSS/mypage_1depth.css">
-<title>회원 가입</title>
+<title>my page</title>
 </head>
 <body>
  <%@ include file ="../header.jsp" %>

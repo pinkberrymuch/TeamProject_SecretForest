@@ -28,4 +28,5 @@
   WHERE USER_ID=#{user_id} AND USER_PASSWORD=#{user_password}
 </select>
 
-</mapper>                 
+</mapper>   
+              

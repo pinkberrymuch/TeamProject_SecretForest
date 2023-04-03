@@ -16,9 +16,8 @@
         <table>
           <tr><a href="#" onclick="location.href='login'">Login</a></tr>
           <tr><a href="#" onclick="location.href='register'">Join</a></tr>
-          <tr><a href="#" onclick="location.href='mypage_1depth'">Mypage</a></tr>
-          <tr><a href="../login/cart.html">Cart</a></tr>
-          <tr><a href="#" onclick="location.href='login'">review</a></tr>
+          <tr><a href="#" onclick="location.href='mypage_1depth'">My page</a></tr>
+          <tr><a href="#" onclick="location.href='boardList.do'">review</a></tr>
         </table>  
       </div>  
        <!--e: 탑 메뉴-->
