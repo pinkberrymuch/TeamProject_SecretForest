@@ -22,8 +22,7 @@
   padding-bottom: 50px;
   padding-top: 20px;
 }
-
-img { margin-top:-70px; margin-bottom:30px; width:1280px; height: 340px; }
+img { margin-top:-70px;  width:1280px; height: 340px; }
  h2,p {text-align: left;}
   #reviewTable { 
 	  border: 1px #a39485 solid;
@@ -62,6 +61,21 @@ img { margin-top:-70px; margin-bottom:30px; width:1280px; height: 340px; }
  #reviewTable a {
  	 color: #73685d;
  }
+ #chkBtn {
+  float: right;
+  width:70px; height:30px;
+  background-color: #73685d;
+  color: white;
+  border: none;
+  border-radius: 40px;
+  margin-bottom: 10px;
+ }
+ #chkBtn:hover {
+  border:2px solid #73685d;
+  color: #73685d;
+  background-color: white;
+
+}
 
 </style>
 </head>
@@ -72,23 +86,15 @@ img { margin-top:-70px; margin-bottom:30px; width:1280px; height: 340px; }
    <!--메인 컨텐츠 시작-->
 	   <div id="contentBox"> 
          <img src="resources/image/etc/reviewPhoto.JPG" alt="photo" >
-	     <br>
-	      <a href = "javascript:popup()" target = "_blank">팝업</a>
-	     <script>
-	        function popup(){
-	            var url = "popup.html";
-	            var name = "popup test";
-	            var option = "width = 500, height = 500, top = 100, left = 200, location = no"
-	            window.open(url, name, option);
-	        }
-        </script>
+	     <br>    
+	     <input type="button" id="chkBtn" value="리뷰 작성"/>
 	     <table  id="reviewTable">
 	       <thead>
 	         <td>No.</td>
 	         <td>제목</td>
 	         <td>내용</td>
 	         <td>작성자</td>
-	         <td>작성일자</td>
+	         <td>작성 일자</td>
 	       </thead>
 	       <tbody>
 	       <c:forEach items="${list}" var="board">
@@ -103,12 +109,7 @@ img { margin-top:-70px; margin-bottom:30px; width:1280px; height: 340px; }
 	       </tr> 
 	       </c:forEach>
 	       </tbody>
-	     
 	     </table>
-	      
-	        <tr>
-	        </tr>
-	   
 	  </div>
       <!--메인 컨텐츠 끝-->
   </div>

@@ -12,7 +12,7 @@
   <header>
       <!--s: 탑 메뉴-->
       <div id="topMenuBox" align="right"> 
-        <div class="logoIntop" align="left">Secret Forest</div>
+        <div class="logoIntop" align="left">http://localhost:8080</div>
         <table>
           <tr><a href="#" onclick="location.href='login'">Login</a></tr>
           <tr><a href="#" onclick="location.href='register'">Join</a></tr>

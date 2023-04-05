@@ -23,13 +23,11 @@
 	</select>
 	<insert id="createBoard" parameterType="com.yanzi.demo.DTO.BoardDto">
 		INSERT INTO REVIEW (
-		              REVIEW_NUM,
 		              REVIEW_TITLE,
 		              REVIEW_CONTENT,
 		              WRITE_DATE,
 		              WRITER)
 		      VALUES (
-		             my_seq2.NEXTVAL,
 		             #{review_title},
 		             #{review_content},
 		             SYSDATE,

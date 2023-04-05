@@ -56,7 +56,7 @@ public class MemberController {
 	 //login은 로그인한 정보를 세션에 객체로 저장해두기 위해 
 	 //MemberDto를 반환하여 프론트엔드단까지 가져간다.
 	 @PostMapping("/login")
-	    public MemberDto login(MemberDto memberDto) {   
+	    public MemberDto login(@RequestBody MemberDto memberDto) {   
 		 logger.info("memberController login()");
 	        return service.login(memberDto);
 	    }

@@ -21,7 +21,7 @@ ul {list-style-type: none;}
   margin-top: -130px;
 }
 fieldset {
-	padding-top:50px;
+  padding-top:50px;
   margin: 80px 0px;
   border: 0px;
 }
@@ -31,53 +31,81 @@ fieldset h1 {
 fieldset p {
   margin-bottom: 20px;
 }
-fieldset p img {width: 16px; height:16px;}
+fieldset p img {width: 11px; height:11px;}
 fieldset div {
   width: 700px;
-  border: 1px solid #ddd;
-  background-color: #f7f7f7;
   border-radius: 2px;
   padding-left: 80px;
-  padding-top:30px;
+  padding-top:40px;
   padding-bottom:30px;
   margin: 0 auto;
   text-align: left;
 }
-
-#register_name{
+#user_id{
+  padding-left:15px;
+  margin: 10px 0;
+  height:50px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+#user_id:focus {
+  border-color:#ddd;
+  outline: none;
+}
+#user_name{
+  padding-left:15px;
+  margin: 10px 0;
+  height:50px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+#user_name:focus {
+  border-color:#ddd;
+  outline: none;
+}
+#user_password{
   padding-left:15px;
   margin: 10px 0;
  
   border: 1px solid #ddd;
   border-radius: 5px;
 }
-#register_pwd{
+#user_password:focus {
+  border-color:#ddd;
+  outline: none;
+}
+#user_email{
   padding-left:15px;
   margin: 10px 0;
  
   border: 1px solid #ddd;
   border-radius: 5px;
 }
-#register_email{
+#user_email:focus {
+  border-color:#ddd;
+  outline: none;
+}
+#user_phone{
   padding-left:15px;
   margin: 10px 0;
  
   border: 1px solid #ddd;
   border-radius: 5px;
 }
-#register_phone{
+#user_phone:focus {
+  border-color:#ddd;
+  outline: none;
+}
+#user_address{
   padding-left:15px;
   margin: 10px 0;
- 
+  height:80px;
   border: 1px solid #ddd;
   border-radius: 5px;
 }
-#register_address{
-  padding-left:15px;
-  margin: 10px 0;
- 
-  border: 1px solid #ddd;
-  border-radius: 5px;
+#user_address:focus {
+  border-color:#ddd;
+  outline: none;
 }
 th {
   font-size: 16px;
@@ -128,4 +156,7 @@ th img {width: 16px; height:16px; }
   border: 2px solid #71A200;
   color: #2b2828;
 }
+
+
+
 /* 컨텐츠 영역 끝*/

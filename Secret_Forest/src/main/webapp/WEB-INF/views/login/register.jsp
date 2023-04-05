@@ -16,14 +16,13 @@
         <!-- <form id="frm" action="/addMember" method="post">-->
 	      <fieldset>
 	        <h1>Join</h1>
-	        <p><img src="resources/image/etc/check.png">은 필수 입력 항목입니다.</p>
+	        <p style="font-size: 14px; color: #2e4103;"><img src="resources/image/etc/check.png">&nbsp;아이콘은 필수 입력 항목입니다.</p>
 	        <div>
 	          <table>
 	            <colgroup>
 	              <col width="180px">
 	              <col>
 	            </colgroup> 
-	        
 	            <tr>
 	              <th>아이디<img src="resources/image/etc/check.png"></th>
 	              <td><input id="user_id" type="text" name="user_id" required></td>
@@ -31,7 +30,7 @@
 	            </tr>
 	            <tr>
 	              <td> </td>
-	              <td><p id="idcheck" style="color: blue"></p></td>
+	              <td><p id="idcheck" style="color: #045FB4"; font-size=10px;></p></td>
 	            </tr>
 
                 <tr>
@@ -55,8 +54,10 @@
 	              <th>주소<img src="resources/image/etc/check.png"></th>
 	              <td><input id="user_address" type="text" name="user_address" required></td>
 	            </tr>
+	            <tr>   
 	          </table>
 	        </div>
+	        <input class="saveCheck" name="id_save" type="checkbox" style="width:12px;height:12px;">&nbsp;<span style="font-size: 12px;">개인정보 이용 및 수집에 동의 합니다</span><br>
 	        <button id="account" class="chkBtn" type="submit">회원 가입</button>
 	      </fieldset>
 	  <!--   </form> -->   

@@ -2,6 +2,7 @@ package com.yanzi.demo.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
@@ -30,6 +31,10 @@ public class Testcontroller {
 	@GetMapping("/register")
 	public String register() {
 		return "login/register";
+	}
+	@GetMapping("/board")
+	public String board() {
+		return "login/Board";
 	}
 
 	@GetMapping("/mypage_1depth")
