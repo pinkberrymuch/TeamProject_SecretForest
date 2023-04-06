@@ -28,7 +28,12 @@ public class Testcontroller {
 	public String login() {
 		return "login/login";
 	}
-	@GetMapping("/register")
+	
+	@RequestMapping("/registerAgree")
+	public String registerAgree() {
+		return "login/registerAgree";
+	}
+	@RequestMapping("/register")
 	public String register() {
 		return "login/register";
 	}

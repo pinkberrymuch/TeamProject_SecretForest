@@ -13,7 +13,7 @@
   <div id="page"> 
    <div class="categoryMenu">
       <div class="categoryFont">
-        <h1>etc</h1>
+        <h2>etc</h2>
         <p>더욱 풍성한 선물을 위해 추가로 구매하기 좋은 상품들을 소개합니다.</p>
       </div> 
       <table class="popular">

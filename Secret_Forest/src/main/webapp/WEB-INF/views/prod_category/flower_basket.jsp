@@ -13,7 +13,7 @@
   <div id="page"> 
    <div class="categoryMenu">
       <div class="categoryFont">
-        <h1>flower basket</h1>
+        <h2>flower basket</h2>
         <p>우아하고 고급스러워 격식 있는 선물로 추천드리는 꽃바구니를 소개 합니다<br></p>
       </div> 
       <table class="popular">

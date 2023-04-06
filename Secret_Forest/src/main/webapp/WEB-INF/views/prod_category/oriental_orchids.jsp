@@ -13,7 +13,7 @@
   <div id="page"> 
    <div class="categoryMenu">
       <div class="categoryFont">
-        <h1>oriental orchid</h1>
+        <h2>oriental orchid</h2>
         <p>승진,개업,집들이,출산 등 소중한 분께 전하는 동양란을 소개 합니다</p>
       </div> 
       <table class="popular">

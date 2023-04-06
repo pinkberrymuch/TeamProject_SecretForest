@@ -9,7 +9,7 @@
   width: 1280px;
   margin: 0 auto;
   padding-bottom: 50px;
-  padding-top: 20px;
+
 }
 a {text-decoration: none;}
 ul {list-style-type: none;}
@@ -22,7 +22,7 @@ ul {list-style-type: none;}
 /* 컨텐츠 영역 : 내용에 따라 높이 달라질 수 있음 */
 .categoryMenu {
  margin:0 auto;
- margin-top: -70px;
+ margin-top: 5%;
  }
  
 .categoryFont {

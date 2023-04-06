@@ -13,7 +13,7 @@
   <div id="page"> 
    <div class="categoryMenu">
      <div class="categoryFont">
-        <h1>condolences wreath</h1>
+        <h2>condolences wreath</h2>
         <p>장례,추모,영결식 고인과 가족을 위로하고 애도하는 마음을 가득담은 근조 상품입니다
         </p>
       </div> 

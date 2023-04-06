@@ -13,7 +13,7 @@
   <div id="page"> 
    <div class="categoryMenu">
       <div class="categoryFont">
-        <h1>tropical orchid</h1>
+        <h2>tropical orchid</h2>
         <p>아름답고 화려한 색으로 공간에 포인트를 더 해주는 서양란을 소개 합니다</p>
       </div> 
       <table class="popular">

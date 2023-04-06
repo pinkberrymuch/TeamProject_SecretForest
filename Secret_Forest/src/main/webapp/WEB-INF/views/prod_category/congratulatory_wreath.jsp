@@ -13,7 +13,7 @@
   <div id="page"> 
    <div class="categoryMenu">
       <div class="categoryFont">
-        <h1>congratulatory wreath</h1>
+        <h2>congratulatory wreath</h2>
         <p>결혼식,공연,전시회,개업 등 특별한 날을 기념하는 축하화환을 소개합니다
         </p>
       </div> 

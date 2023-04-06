@@ -13,7 +13,7 @@
   <div id="page"> 
    <div class="categoryMenu">
       <div class="categoryFont">
-        <h1>bouquet</h1>
+        <h2>bouquet</h2>
         <p>가장 신선한 꽃으로 가장 아름답게 만드는 꽃다발을 소개 합니다<br></p>
       </div> 
       <table class="popular">

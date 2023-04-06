@@ -13,11 +13,7 @@
 }
 a {text-decoration: none;}
 ul {list-style-type: none;}
-.basicHR {
-  background-color:#71A200;
-  height: 1px;
-  border: 0px;
-}
+
 
 
 /* 컨텐츠 영역 : 내용에 따라 높이 달라질 수 있음 */

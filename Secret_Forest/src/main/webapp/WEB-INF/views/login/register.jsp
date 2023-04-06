@@ -13,54 +13,69 @@
   <div id="page">
    <!--메인 컨텐츠 시작-->
     <div id="contentBox">
-        <!-- <form id="frm" action="/addMember" method="post">-->
 	      <fieldset>
-	        <h1>Join</h1>
-	        <p style="font-size: 14px; color: #2e4103;"><img src="resources/image/etc/check.png">&nbsp;아이콘은 필수 입력 항목입니다.</p>
+	        <h1 style="font-size: 30px; color: rgb(107, 107, 107);">Join</h1>
+	        <p style="font-size: 14px; color: #81817f;"><img src="resources/image/etc/check.png">&nbsp;아이콘은 필수 입력 항목입니다.</p>
 	        <div>
 	          <table>
-	            <colgroup>
-	              <col width="180px">
-	              <col>
-	            </colgroup> 
+	            <th>
+	              <p>사이트 이용정보 입력</p>
+	            </th>
 	            <tr>
-	              <th>아이디<img src="resources/image/etc/check.png"></th>
-	              <td><input id="user_id" type="text" name="user_id" required></td>
-	              <td><button type="button" id="idCheckBtn">중복 확인</button></td>
+	              <td><input id="user_id" type="text" name="user_id" required placeholder="아이디"></td>
+	              <td></td><td><button type="button" id="idCheckBtn">중복 확인</button></td>
 	            </tr>
 	            <tr>
-	              <td> </td>
-	              <td><p id="idcheck" style="color: #045FB4"; font-size=10px;></p></td>
+	              <td><p id="idcheck"></p></td>
 	            </tr>
 
                 <tr>
-	              <th>이름<img src="resources/image/etc/check.png"></th>
-	              <td><input id="user_name" type="text" name="user_name" required></td>
+	              <td><input id="user_name" type="text" name="user_name" required placeholder="이름"></td>
 	            </tr>
 	            <tr>
-	              <th>비밀번호<img src="resources/image/etc/check.png"></th>
-	              <td><input id="user_password" type="password" name="user_password" placeholder="영문,숫자,특수문자 포함 8자이상" required></td>
+	              <td><input id="user_password" type="password" name="user_password" placeholder="비밀번호" required></td>
 	            </tr>
-
+	            <tr></tr>
+                <th>
+	              <p>개인정보 입력</p>
+	            </th>
 	            <tr>
-	              <th>이메일</th>
-	              <td><input id="user_email" type="text" name="user_email"></td>
+	              <td><input id="user_email" type="text" name="user_email" placeholder="이메일"></td>
 	            </tr>
 	            <tr>
-	              <th>휴대폰 번호<img src="resources/image/etc/check.png"></th>
               <td><input id="user_phone" type="text" name="user_phone" placeholder="- 빼고 입력하세요" required></td>
 	            </tr>
 	            <tr>
-	              <th>주소<img src="resources/image/etc/check.png"></th>
-	              <td><input id="user_address" type="text" name="user_address" required></td>
+	              <td><input id="user_address" type="text" name="user_address" required placeholder="주소"></td>
 	            </tr>
-	            <tr>   
+	            <tr></tr>
+	            <th>
+	              <p>기타 개인설정</p>
+	            </th>  
 	          </table>
+	          <div class="tbl_wrap">
+		        <ul>
+		            <li class="opt_chk">
+		                <label for="reg_mb_mailling" class="frm_label">메일링서비스</label>
+		                <input type="checkbox" name="mb_mailling" value="1" id="reg_mb_mailling" checked>
+		                정보 메일을 받겠습니다.  
+		            </li>
+		            <li>
+		            	<span class="opt_chk">
+		                	<label for="reg_mb_open" class="frm_label">정보공개</label>
+		                	<input type="hidden" name="mb_open_default" value="">
+		                	<input type="checkbox" name="mb_open" value="1" checked id="reg_mb_open">
+		                다른분들이 나의 정보를 볼 수 있도록 합니다.
+		                </span><br>
+		                <span class="frm_info">
+		                    정보공개를 바꾸시면 앞으로 0일 이내에는 변경이 안됩니다.
+		                </span>                
+		           </li>
+		        </ul>
+	          </div>
 	        </div>
-	        <input class="saveCheck" name="id_save" type="checkbox" style="width:12px;height:12px;">&nbsp;<span style="font-size: 12px;">개인정보 이용 및 수집에 동의 합니다</span><br>
 	        <button id="account" class="chkBtn" type="submit">회원 가입</button>
 	      </fieldset>
-	  <!--   </form> -->   
     </div>
     <script>
 	    $("#idCheckBtn").click(function() {

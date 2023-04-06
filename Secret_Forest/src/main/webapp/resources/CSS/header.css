@@ -10,6 +10,7 @@
   margin: 0 auto;
   padding-bottom: 50px;
   padding-top: 20px;
+  
 }
 a {text-decoration: none;}
 ul {list-style-type: none;}
@@ -32,16 +33,19 @@ ul {list-style-type: none;}
 header a span {
   font-size: 20px;
 }
+header {
+	position: fixed;
+	background-color: white;
+	z-index: 20;
+	box-shadow: 0px 4px 4px -4px gray;
+	margin-top: -26px;
+}
 #topMenuBox {
   width: 1280px;
-  height: 40px;
-  background-color : black;
-  margin-top: -40px;
-  z-index:20;
+  height: 37px;
+  background-color : #EDB73E;
   margin-right: 15px;
   padding-top: 10px; 
-  position: fixed;
-  box-shadow: 0px 2px 2px -2px gray;
 }
 #topMenuBox table {
   border-spacing: 15px;
@@ -51,26 +55,18 @@ header a span {
  padding-right: 17px;
  padding-bottom: 6px;
  padding-top: 6px;
- color: #ffffff;
- font-size: 15px;
+ color: #0c0b36;
+ font-size: 12px;
  font-weight: 10px;
  text-shadow: 2px 2px 2px 2px gray;
 }
-#topMenuBox  a:hover {
- color: #c7df8f;
- text-shadow: 2px 2px 2px 2px gray;
-}
+
 .logoIntop {
  float:left;
  width: 200px; height: 30px;
- font-size: 12px;
- font-weight: 10px;
- color: #ffffff;
  padding-left: 10px;
  padding-top: 1px;
 }
-
-
 /* e: 탑 메뉴 */
 
 
@@ -80,110 +76,23 @@ header a span {
   height: 60px;
   background-color:white;
   margin-top: 15px;
-  display: flex;
 }
-
-/* 02. 컬러 필터 검색*/
-.color_Box {
-  width:300px;	
-  height: 40px;
-  margin-right: 180px;
-}
-.colortable {
- border-spacing: 10px;
- height: 20px;
- margin:auto;
- position: relative;
- float: left;
-}
-#colorS {
- width: 17px; height: 17px;
- border-radius: 50%;
- border: 1px solid #4e6d07;
-}
-#colorT {
- font-size: 14px;
- width: 70px;
- color: #4e6d07;
-}
-.red {background-color: red;}
-.orange {background-color: orangered;}
-.yellow {background-color: yellow;}
-.green {background-color: green;}
-.blue {background-color: blue;}
-.white {background-color: white;}
 
 
 /* 03. 로고 */
  .logoBox { 
  width: 300px;
- height: 40px;
- padding-top: 5px;
- padding-left: 80px;
- margin-right: 200px;
+ height: 30px;
+ padding-left: 47%;
 }
-.logoBox #logo {
-  font-size: 20px;
-  font-weight:bold; 
-  color: #2e4103;
-  }
-
-/* 04. 검색창 */
-#search_box {
- width: 300px;
- height: 40px;
- float: right;
- margin-right: -10px;
-}
-#search {
- margin-top: 8px;
- margin-left: 54px;
-}
-#search_box input {
- width: 200px;
- height: 24px;
- border-bottom: 2px solid #71A200;
- border-left:none;
- border-top:none;
- border-right:none;
- outline: none;
- font-size: 14px;
- color: #4e6d07;
- padding-left: 30px;
- padding-top: 2px;
-}
-#search_box button {	
- width: 26px;
- height: 26px;
- margin: 0;
- padding: 0;
- border: none;
- background: #71A200;
- color: white;
- font-size: 15px;
- text-align: center;
- border-radius: 50%;
-}
-#search_box button:hover {
-background-color: #2e4103;
-}
-
 
 /* 05. s: 카테고리 */
-#categoryBox {
-  height: 45px; 
-  box-shadow: 0 0px 0px -5px;
- }
+#categoryBox {height: 45px; box-shadow: 0 0px 0px -5px;}
 #categoryTable {border-spacing: 12px; margin-left: 170px;}
 #categoryTable td { padding-right: 80px; }
-#categoryTable td a {
-  font-size: 15px;
- font-weight: 70px;
-}
-#categoryBox a {
-  color: rgb(107, 107, 107);
-}
-#categoryBox a:hover{color: #71A200;}
+#categoryTable td a {font-size: 14px; font-weight: bold;}
+#categoryBox a {color: #2E2E2E;}
+#categoryBox a:hover{color: black; border-bottom: 2px solid #2e4103;}
 
 
 

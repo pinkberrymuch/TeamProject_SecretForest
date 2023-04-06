@@ -9,20 +9,15 @@
   width: 1280px;
   margin: 0 auto;
   padding-bottom: 50px;
-  padding-top: 20px;
 }
 a {text-decoration: none;}
 ul {list-style-type: none;}
-.basicHR {
-  background-color:#71A200;
-  height: 1px;
-  border: 0px;
-}
+
 
 /* 컨텐츠 영역 : 내용에 따라 높이 달라질 수 있음 */
 .categoryMenu {
  margin:0 auto;
- margin-top: -70px;
+ margin-top: 3%;
  }
 .categoryFont {
  width: 1280px;
@@ -35,20 +30,18 @@ ul {list-style-type: none;}
  border-bottom-left-radius: 10px;
  border-bottom-right-radius: 10px;
 }
-.categoryFont h1 {
- color:#617b35;
- font-size: 35px;
- font-style: oblique;
- font-weight: 600;
+.categoryFont h2 {
+ color:#1d1c47;
+ font-size: 27px;
+ font-weight: 700;
 }
 .categoryFont p {
-  font-size: 16px; 
+  font-size: 13px; 
   text-align: left;
   padding: 12px;
-  font-weight: 700;
+  font-weight: bold;
   text-indent: -10px;
-  color:#4f5636;
-  font-family: "맑은고딕";
+  color:#463b0e;
 }
 .categoryMenu {
 width: 100%;
@@ -60,7 +53,7 @@ text-align: start;
  font-size: 15px;
  color: #222222;
 }
-.popular .imgP:hover {color: #71A200;}
+.popular .imgP:hover {color: #0c0b36;}
 .popular td {
 padding: 0;
 margin: 2px;

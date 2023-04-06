@@ -15,7 +15,7 @@
 	   <div id="contentBox">
 	      <fieldset>
 	        <h1 style="font-size: 30px; font-weight:bold; color: rgb(107, 107, 107);">Sign in</h1>
-	        <span style="font-size: 14px; color: #2e4103;">로그인 후 더 많은 기능을 누려보세요</span><br><br>
+	        <span style="font-size: 14px; color: #81817f;">로그인 후 더 많은 기능을 누려보세요</span><br><br>
 	        <div id="loginUser">
 	          아이디&nbsp;&nbsp;&nbsp;&nbsp;<input id="user_id" name="user_id" type="text" maxlength="100" placeholder="아이디를 입력 하세요"><Br>
 	          비밀번호&nbsp;<input id="user_password" name="user_password" type="password" maxlength="100" placeholder="비밀번호를 입력 하세요">

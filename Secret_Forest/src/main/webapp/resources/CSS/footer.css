@@ -21,6 +21,9 @@ ul {list-style-type: none;}
 }
 
 /* 푸터 */
+ #contentBox {
+  margin-top: 15%;
+ }
 footer {
   color: rgb(107, 107, 107); 
  }

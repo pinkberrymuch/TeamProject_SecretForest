@@ -14,36 +14,68 @@
 a {text-decoration: none;}
 ul {list-style-type: none;}
 .basicHR {
-  background-color:#71A200;
+  background-color:#0c0b36;
   height: 1px;
   border: 0px;
 }
+ #contentBox {
+  margin-top: -70px;
+  margin-bottom: -70px;
+ }
+ 
+/* 컬러 필터*/
 
-/* 컨텐츠 영역 */
+#colorGarden {
+  background-color: #d7f1dc;
+  width: 1280px; 
+  height:420px;
+  margin-top: -140px;
+  margin-bottom: 50px;
+  padding-top: 70px;
+  padding-left: 20px;
+}
+.color_Box {
+  margin-right: 180px;
+  margin-top: 126px;
+}
+.colortable {
+ height: 20px;
+ margin:auto;
+ float: left;
+}
+.red {width: 0; height: 0; border-bottom: 170px solid red; border-left: 170px solid transparent; }
+.orange { width: 0; height: 0; border-bottom: 170px solid orange; border-right: 170px solid transparent; }
+.yellow  { width: 0; height: 0; border-bottom: 170px solid yellow; border-left: 170px solid transparent; }
+.green { width: 0; height: 0; border-bottom: 170px solid green; border-right: 170px solid transparent;}
+.blue {  width: 0; height: 0; border-bottom: 170px solid blue; border-left: 170px solid transparent;}
+.white { width: 0; height: 0; border-bottom: 170px solid rgb(207, 207, 207); border-right: 170px solid transparent; }
+
 
 /*s: 간편 테스트 */
  #simpleOrder {
   height: 600px;
- padding-bottom: 20px;
+  padding-bottom: 20px;
+  padding-top:30px;
  }
  .simpleOrderText {
   padding-left: 20px;
+  margin-bottom: 50px;
+ }
+ .simpleOrderText p {
+  font-size: 14px;
  }
  #simpleOrderBox {
-  height: 500px;
+  height:450px;
+  width: 1280px;
   display: flex;
-  padding-left:70px;
-  padding-top: 40px;
 }
  .simpleOrderTo{
-  border-top: 1px solid #8d8d8d3f;	
-  border-bottom: 1px solid #8d8d8d7e;
   border-top-left-radius:21px;
   border-bottom-left-radius:21px;
-  width: 600px; height: 510px;
-  padding-top:40px;
+  width: 500px; height: 400px;
   padding-left:60px;
-  background: linear-gradient(45deg,#C3C6C1, #D6D3D3, #F5F3F3);
+  padding-top: 40px;
+  background: linear-gradient(45deg,#e4ebe0, #d5ebd8, #b8d6c2);
  }
  .simpleOrderTo legend {
   padding-left : 20px;
@@ -51,42 +83,32 @@ ul {list-style-type: none;}
   color:#4F504E;
  }
  .simpleOrderTo table {
-  border-spacing: 20px;
+  border-spacing: 10px;
  }
  
  #imgBox {
-  width: 500px; height: 510px;
+  width: 400px; height: 400px;
   border-right: 1px solid #8d8d8d7e;
  }
  #myImg {
-  width: 500px; height: 510px;
-  border-right: 1px solid #8d8d8d7e;
+  width: 400px; height: 400px;
  }
  /*e: 간편 테스트 */ 
 
 
- /*s: 인기 상품 */
-#contentBox {
-  width: 1280px;
-}
-
-.bestProd{
-  height: 300px;
-  margin-top: -20px;
-}
+ /*s: 카테고리 */
 .textBox {
-  margin-top: 120px;
-  padding-left: 20px;
+  padding-left: 60px;
 }
 .imageBox {
   margin-top: 22px;
-  padding-left: 30px;
+  padding-left: 70px;
 }
 .imageBox table {
-  border-spacing: 24px;
+  border-spacing: 30px;
 }
 .imageBox .imgBox {
-  width: 120px; height: 120px;
+  width: 150px; height: 150px;
   border: #b5b8b681 solid 1px;
   border-radius: 50%;
   box-shadow: 0px 2px 2px -1px gray;
@@ -98,29 +120,26 @@ ul {list-style-type: none;}
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
-
 .imageBox .imgBox:hover {
   box-shadow: 0 5px 11px rgba(0,0,0,0.25), 0 7px 7px rgba(0,0,0,0.22);
   border: #2e410384 solid 1px;
 }
 .imageBox .imgP {
   text-align: center;
-  font-size: 11px;
+  font-size: 14px;
   color: #222222;
  }
 .imageBox img {
-  width: 120px; height: 120px;
+  width: 150px; height: 150px;
   border-radius: 50%;
 }
- /*e: 베스트 상품 */
+ /*e: 카테고리 */
  
 
- 
 /*s: 배송 관련 배너 */
 #banner {
   width: 1280px; height: 490px;
-  padding-top: 40px;
-  margin-bottom: 30px;
+  margin-bottom:70px;
 }
 #banner img {
   margin-left:30px;
@@ -128,6 +147,67 @@ ul {list-style-type: none;}
   width: 1240px; height: 420px;
   border-radius: 12px;
 }
+
+/*리뷰 롤링*/
+.rolling_box {
+  width: 350px;
+  height: 60px;
+  background-color: #0c0b36;
+  border-top-left-radius:20px;
+  border-top-right-radius:20px;
+  color: #ccc;
+  margin-top: 50px;
+  margin-left: 30px;
+  padding-top: 25px;
+  }  
+
+ .rolling_box ul {
+  width: 330px;
+  height: 40px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  margin-top: -10px;
+  margin-left: 30px;
+  }
+
+ .rolling_box ul li {
+  width: 300px;
+  height: 40px;
+  transition: .5s;
+  position:absolute;
+  transition: top .75s;
+  top: 100%;
+  z-index: 1;
+  color: #fff;
+  background-color: #0c0b36;
+  }
+
+ .card_sliding{
+  top: 0 !important;
+  z-index: 100 !important;
+ } 
+
+ .card_sliding_after{
+  top: -100% !important;
+  z-index: 10 !important;
+ }
+
+ .rolling_box ul li p {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: lighter;
+ }
+
+ .before_slide {
+  transform: translateY(100%);
+ }
+
+ .after_slide {
+  transform: translateY(0);
+  }
+  
+/* 컨텐츠 영역 */
 /*s: 배송 관련 배너 */
 
 
