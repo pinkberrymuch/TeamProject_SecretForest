@@ -22,7 +22,7 @@
 	      <div id="infoBox">
 		      <div id="info">
 		        <ul>
-		          <li><h2 style="color: #71A200; font-size: 28px;">1588-0000</h2></li>
+		          <li><h2 style="color: #131252; font-size: 28px;">1588-0000</h2></li>
 		          <li style="font-size: 13px;">평일 : 09:00 ~ 19:00</li>
 		          <li style="font-size: 13px;">주말,공휴일 : 09:00 ~ 17:00</li>
 		        </ul> 

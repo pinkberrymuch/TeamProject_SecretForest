@@ -49,7 +49,7 @@
 
 	/* ### 기본 스타일 커스터마이징 끝 ### */
 	/* 회원가입 약관 */
-	#fregister p {text-align:center;color:#0c0b36;background:#deefd8;padding:10px;border:1px solid #ccdebe;margin:0 0 5px}
+	#fregister p {text-align:center;color:#0c0b36;background:#f7ebd2;padding:10px;border:1px solid #dedbbe;margin:0 0 5px; font-size: 14px;}
 	#fregister section {position:relative;margin:10px auto 20px;border:1px solid #dbdbdb}
 	#fregister_chkall {text-align:left;padding:15px;border:1px solid #dbdbdb}
 	#fregister h2 {text-align:left;padding:15px 20px;border-bottom:1px solid #dbdbdb}
@@ -59,13 +59,14 @@
 	#fregister_private div {padding:20px;background:#fff}
 	#fregister_private table {width:100%;border-collapse:collapse}
 	#fregister_private table caption {position:absolute;font-size:0;line-height:0;overflow:hidden}
-	#fregister_private table th {background:#deefd8;width:33.33%;color:#3c3c3c;padding:10px;border:1px solid #b6ccae}
+	#fregister_private table th {background:#f7ebd2;width:33.33%;color:#3c3c3c;padding:10px;border:1px solid #b3a47c}
 	#fregister_private table td {border:1px solid #ddd;padding:10px}
 	#fregister .btn_confirm {text-align:center}
 	#fregister .btn_confirm .btn_submit {
-	 height:50px;padding:0 40px;font-size:1.083em;
-	 background-color: #0c0b36; color: white; border: none; border-radius: 17px; margin-top: 30px;
+	 height:50px;padding:0 40px;font-size:14px;
+	 background-color: #cc9d36; color: white; border: none; border-radius: 17px; margin-top: 30px;
 	 }
+	 #fregister .btn_confirm .btn_submit:hover { background-color: #926f23;} 
 </style>
 <title>회원 가입 약관</title>
 </head>
@@ -75,12 +76,12 @@
     <!--메인 컨텐츠 시작-->
    <div id="contentBox">
 			<!-- 회원가입약관 동의 시작 { -->
-            <h2 style="font-size: 25px; font-weight:bold; color: rgb(107, 107, 107);">가입 약관 동의</h2>
+            <h2 style="font-size: 25px; font-weight:bold; color: #2b2a29;">가입 약관 동의</h2>
 	        <p style="font-size: 14px; color: #81817f;">가입 후 더 많은 서비스를 이용해 보세요</p><br><br>
-			<form id="fregister" action="/register">
+			<form name="fregister" id="fregister" action="http://localhost:8080/register" onsubmit="return fregister_submit(this);" method="POST" autocomplete="off">
 				<p>회원가입약관 및 개인정보처리방침안내의 내용에 동의하셔야 회원가입 하실 수 있습니다.</p>
 				<section id="fregister_term">
-					<h2 style="color: #4f5636; font-size: 20px;">회원가입약관</h2>
+					<h2 style="color: #796a28; font-size: 20px;">회원가입약관</h2>
 					<textarea readonly>제1조(목적) 이 약관은 &#034;시크릿 포레스트&#034; 회사(전자상거래 사업자)가 운영하는 &#034;시크릿 포레스트&#034; 사이버 몰(이하 “몰”이라 한다)에서 제공하는 인터넷 관련 서비스(이하 “서비스”라 한다)를 이용함에 있어 사이버 몰과 이용자의 권리ㆍ의무 및 책임사항을 규정함을 목적으로 합니다.
 						※「PC통신, 무선 등을 이용하는 전자상거래에 대해서도 그 성질에 반하지 않는 한 이 약관을 준용합니다」
 						
@@ -332,7 +333,7 @@
 		   </section>
 	
 				<section id="fregister_private">
-					<h2 style="color: #4f5636; font-size: 20px;">개인정보처리방침안내</h2>
+					<h2 style="color: #796a28; font-size: 20px;">개인정보처리방침안내</h2>
 					<div class="tbl_head01 tbl_wrap">
 							<table>
 									<caption>개인정보처리방침안내</caption>
@@ -370,12 +371,10 @@
 				</div>
 					
 				<div class="btn_confirm">
-				  <a href="#" onclick="location.href='register'">
-					<button type="submit" class="btn_submit">회원가입</button>
-				  </a>	
-				</div>
+					<button type="submit" class="btn_submit">회원 가입</button>
+			 </div>
 		 </form>
-			<script>
+		 <script>
 				function fregister_submit(f)
 				{
 						if (!f.agree.checked) {

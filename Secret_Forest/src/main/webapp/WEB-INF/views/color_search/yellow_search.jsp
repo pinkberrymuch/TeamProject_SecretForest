@@ -13,11 +13,8 @@
   <div id="page">
     <div class="categoryMenu">
 	      <div class="categoryFont">
-	        <h1 >Color : <span style="background-color: #635e5e4d;
-	          color: yellow;
-	          text-shadow: 2px 2px 3px rgba(255,255,255,0.2)">&nbsp;yellow&nbsp;</span>
-	        </h1><br><br>
-          </div>    
+					<h2><span style="color: rgb(136, 138, 41);">yellow</span><span style="color: #0c0b36;">Forest</span></h2><br><br>
+        </div>    
 	      <table class="popular">
 	        <tr>
 	          <td><a href="../prod_details/prod_id_01.html"><img src="resources/image/prod_category/bouquet/bouquet1.jpg" alt="wreath1"></a>

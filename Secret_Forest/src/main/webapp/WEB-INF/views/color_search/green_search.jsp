@@ -13,7 +13,7 @@
   <div id="page">
     <div class="categoryMenu">
 	      <div class="categoryFont">
-            <h1 >Color : <span style="color: green;">green</span><br><br>
+           <h2><span style="color: green;">green</span><span style="color: #0c0b36;">Forest</span></h2><br><br>
           </div> 
 	      <table class="popular">
 	        <tr>

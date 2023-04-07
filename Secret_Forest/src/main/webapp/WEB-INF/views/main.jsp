@@ -39,22 +39,22 @@
 				<div class="imageBox">
 					<table>
 						<tr>
-							<td><a href="#"><div class="imgBox"><img src="resources/image/prod_category/bouquet/bouquet5.jpg" alt="bouquet"></div></a>
+							<td><a href="#" onclick="location.href='bouquet'"><div class="imgBox"><img src="resources/image/prod_category/bouquet/bouquet5.jpg" alt="bouquet"></div></a>
 								<br><p class="imgP">꽃다발</p>
 							</td> 
-							<td><a href="#"><div class="imgBox"><img src="resources/image/prod_category/flower_basket/flower_basket10.jpg" alt="basket"></div></a>
+							<td><a href="#" onclick="location.href='flower_basket'"><div class="imgBox"><img src="resources/image/prod_category/flower_basket/flower_basket10.jpg" alt="basket"></div></a>
 								<br><p class="imgP">꽃바구니</p>
 							</td>  
-							<td><a href="#"><div class="imgBox"><img src="resources/image/prod_category/etc/air_cleaning2.jpg" alt="air"></div></a>
+							<td><a href="#" onclick="location.href='etc'"><div class="imgBox"><img src="resources/image/prod_category/etc/air_cleaning2.jpg" alt="air"></div></a>
 								<br><p class="imgP">공기정화식물</p>
 							</td>  
-							<td><a href="#"><div class="imgBox"><img src="resources/image/prod_category/tropical_orchid/tropical_orchid9.jpg" alt="tropical"></div></a>
+							<td><a href="#" onclick="location.href='tropical_orchids'"><div class="imgBox"><img src="resources/image/prod_category/tropical_orchid/tropical_orchid9.jpg" alt="tropical"></div></a>
 								<br><p class="imgP">서양란</p>
 							</td>  
-							<td><a href="#"><div class="imgBox"><img src="resources/image/prod_category/oriental_orchids/oriental_orchids2.jpg" alt="oriental"></div></a>
+							<td><a href="#" onclick="location.href='oriental_orchids'"><div class="imgBox"><img src="resources/image/prod_category/oriental_orchids/oriental_orchids2.jpg" alt="oriental"></div></a>
 								<br><p class="imgP">동양란</p>
 							</td>  
-							<td><a href="#"><div class="imgBox"><img src="resources/image/prod_category/congratulatory_wreath/congratulatory_wreath8.jpg" alt="wreath6"></div></a>
+							<td><a href="#" onclick="location.href='congratulatory_wreath'"><div class="imgBox"><img src="resources/image/prod_category/congratulatory_wreath/congratulatory_wreath8.jpg" alt="wreath6"></div></a>
 								<br><p class="imgP">화환</p>
 							</td>   
 						</tr>

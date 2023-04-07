@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="../resources/CSS/color_search.css">
-<title>color category_yellow</title>
+<title>color category_white</title>
 </head>
 <body>
  <%@ include file ="../header.jsp" %>
@@ -13,10 +13,7 @@
   <div id="page">
     <div class="categoryMenu">
 	      <div class="categoryFont">
-	        <h1>Color : <span style="background-color: #666666;
-	          color: white;
-	          text-shadow: 2px 2px 3px rgba(255,255,255,0.2)">&nbsp;white&nbsp;</span>
-	        </h1><br><br>
+	        <h2><span style="color: rgb(160, 160, 160);">white</span><span style="color: #0c0b36;">Forest</span></h2><br><br>
           </div> 
 	      <table class="popular">
 	        <tr>

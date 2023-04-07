@@ -16,7 +16,6 @@
         <table>
           <tr><a href="#" onclick="location.href='login'">Login</a></tr>
           <tr><a href="#" onclick="location.href='registerAgree'">Join</a></tr>
-          <tr><a href="#" onclick="location.href='boardList.do'">review</a></tr>
         </table>  
       </div>  
       <!--e: 탑 메뉴-->
@@ -26,7 +25,7 @@
 	      <!--로고-->
 	      <div class="logoBox">
 		     <a href="#" onclick="location.href='main'" id="logo">
-		      <span style="color: #080738; font-size: 14px; font-weight: bold;"> Secret Forest</span> 
+		      <span style="color: #080738; font-size: 20px; font-weight: bold; font-family:'EuroRoman'; letter-spacing: 1.3px;"> Secret Forest</span> 
 		     </a>
 	      </div>
 	   </div>
@@ -42,6 +41,8 @@
 						<td><a href="#" onclick="location.href='condolences_wreath'">근조 화환</a></td>
 						<td><a href="#" onclick="location.href='congratulatory_wreath'">축하 화환</a></td>
 						<td><a href="#" onclick="location.href='etc'">기타</a></td>
+						<td><a href="#" onclick="location.href='boardList.do'"><span style="font-size: 14px; font-weight: bold; color: #EDB73E;">한줄 리뷰</span></a></td>
+
 					</tr>
 				</table>
 	    </div> 

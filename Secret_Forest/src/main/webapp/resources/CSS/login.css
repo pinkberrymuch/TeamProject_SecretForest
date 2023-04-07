@@ -60,6 +60,7 @@ fieldset h1 {
 #loginBtn {
   height: 44px; width: 140px;
   border: none;
+  border-radius: 10px;
   text-align: center;
   background-color: #0c0b36;
   color: white;
