@@ -22,15 +22,15 @@
   padding-bottom: 50px;
   padding-top: 20px;
 }
-img { margin-top:-70px;  width:1280px; height: 340px; }
- h2,p {text-align: left;}
+ h3,p {text-align: left;}
   #reviewTable { 
-	  border: 1px #a39485 solid;
+	  border: 1px #0c0b3679 solid;
 	  font-size: .9em;
 	  box-shadow: 0 2px 5px rgba(0,0,0,.25);
-	  width: 100%;
+	  width: 1250px;
 	  border-collapse: collapse;
 	  border-radius: 5px;
+		margin-left: 20px;
 	  overflow: hidden;;
   }
   #reviewTable th {
@@ -40,12 +40,12 @@ img { margin-top:-70px;  width:1280px; height: 340px; }
   #reviewTable thead {
 	  font-weight: bold;
 	  color: #fff;
-	  background: #73685d;
+	  background: rgba(0,0,0,.25);
   }
    #reviewTable thead td {
 	  font-weight: bold;
 	  color: #fff;
-	  background: #73685d;
+	  background: rgba(0,0,0,.25);
   }
   
   #reviewTable td, th {
@@ -58,25 +58,20 @@ img { margin-top:-70px;  width:1280px; height: 340px; }
 	  background: #fff;
   }
 
- #reviewTable a {
- 	 color: #73685d;
- }
  #chkBtn {
   float: right;
   width:70px; height:30px;
-  background-color: #73685d;
+  background-color: #0c0b36d2;
   color: white;
   border: none;
-  border-radius: 40px;
+  border-radius: 10px;
   margin-bottom: 10px;
+	margin-right: 10px;
  }
  #chkBtn:hover {
-  border:2px solid #73685d;
-  color: #73685d;
+  color: #0c0b36d2;
   background-color: white;
-
 }
-
 </style>
 </head>
 
@@ -85,9 +80,10 @@ img { margin-top:-70px;  width:1280px; height: 340px; }
   <div id="page">
    <!--메인 컨텐츠 시작-->
 	   <div id="contentBox"> 
-         <img src="resources/image/etc/reviewPhoto.JPG" alt="photo" >
-	     <br>    
-	     <input type="button" id="chkBtn" value="리뷰 작성"/>
+				<h3 style="font-size: 25px; font-weight:bold; color: #2b2a29;">고객 한줄 리뷰</h3><br>
+				<p style="font-size: 14px; color: #81817f;">소중한 리뷰 한줄로 시크릿 포레스트는 오늘도 아름다운 꽃을 피웁니다</p>
+				<br> 
+	     <a href="#" onclick="location.href='board'"><input type="button" id="chkBtn" value="리뷰 작성"/></a>
 	     <table  id="reviewTable">
 	       <thead>
 	         <td>No.</td>
@@ -103,9 +99,7 @@ img { margin-top:-70px;  width:1280px; height: 340px; }
 	         <td>${board.review_title}</td>
 	         <td>${board.review_content}</td>
 	         <td>${board.writer}</td>
-	         <td>
-		         <fmt:formatDate value="${board.write_date}" pattern="yyyy-MM-dd"/>
-	         </td>
+	         <td>${board.write_date}</td>
 	       </tr> 
 	       </c:forEach>
 	       </tbody>

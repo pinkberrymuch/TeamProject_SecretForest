@@ -1,7 +1,5 @@
 package com.yanzi.demo.DTO;
 
-import java.util.Date;
-
 public class BoardDto {
 	/*
 	 * 3. Review 테이블 생성 create table review
@@ -14,7 +12,7 @@ public class BoardDto {
 	private int review_num;
 	private String review_title;
 	private String review_content;
-	private Date write_date;
+	private String write_date;
 	private String writer;
 	
 	public int getReview_num() {
@@ -35,10 +33,10 @@ public class BoardDto {
 	public void setReview_content(String review_content) {
 		this.review_content = review_content;
 	}
-	public Date getWrite_date() {
+	public String getWrite_date() {
 		return write_date;
 	}
-	public void setWrite_date(Date write_date) {
+	public void setWrite_date(String write_date) {
 		this.write_date = write_date;
 	}
 	public String getWriter() {
@@ -53,6 +51,7 @@ public class BoardDto {
 				+ review_content + ", write_date=" + write_date + ", writer=" + writer + "]";
 	}
 	
+    
 	
     
 	

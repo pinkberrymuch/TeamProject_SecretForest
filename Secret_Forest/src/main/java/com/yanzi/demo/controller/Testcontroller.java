@@ -37,7 +37,7 @@ public class Testcontroller {
 	public String register() {
 		return "login/register";
 	}
-	@GetMapping("/board")
+	@RequestMapping("/board")
 	public String board() {
 		return "login/Board";
 	}

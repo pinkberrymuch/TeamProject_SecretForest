@@ -12,11 +12,9 @@
 	 <hr class="grayHR">
 	    <footer>
 	      <div id="category">
-	        <a href="../footer/cs.html" class="menu">고객센터</a>
-	        <a href="#" class="menu">공지사항</a>
 	        <a href="#" onclick="location.href='introductionWebsite'" class="menu">Secret forest 소개</a>
 	        <a href="#" onclick="location.href='termsOfUse'" class="menu">이용약관</a>
-	        <a href="#" onclick="location.href='handlingPolicy'" class="menu">처리방침</a>
+	        <a href="#" onclick="location.href='handlingPolicy'" class="menu">개인정보 처리방침</a>
 	      </div>
 	      
 	      <div id="infoBox">
@@ -29,9 +27,9 @@
 		      </div>     
 		      <div id="SNS">
 		        <table>
-		          <td><a href="#"><img src="resources/image/footer_icon/kakao.png" alt="카카오톡"></a></td>
-		          <td><a href="#"><img src="resources/image/footer_icon/facebook.png" alt="페이스북"></a></td>
-		          <td><a href="#"><img src="resources/image/footer_icon/instar.png" alt="인스타그램"></a></td>
+		          <td><img src="resources/image/footer_icon/kakao.png" alt="카카오톡"></td>
+		          <td><img src="resources/image/footer_icon/facebook.png" alt="페이스북"></td>
+		          <td><img src="resources/image/footer_icon/instar.png" alt="인스타그램"></td>
 		        </table>
 		      </div>
 	      </div>

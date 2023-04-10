@@ -14,8 +14,8 @@
     <!--메인 컨텐츠 시작-->
     <div id="contentBox">
 			<div id="colorGarden">
-				<div class="Text">
-					<span style="font-weight: bold; font-size: 24px; color: #2b2a29;">Color forest</span><br>
+				<div class="textBox">
+					<span style="font-size: 20px; font-weight: bold; font-family:'EuroRoman'; letter-spacing: 1.3px; color: #2b2a29be;">Color forest</span><br>
 					<p style="color: #81817f;">다채로운 색상으로 만나보는 Color 카테고리로 원하는 상품을 찾아보세요</p> 
 				</div>
 				<div class="color_Box">
@@ -31,11 +31,48 @@
 					</table> 
 				</div>
 			</div>	
-			<div class="bestProd">
-				<div class="simpleOrderText">
-					<span style="font-weight: bold; font-size: 23px; color: #2b2a29;">Category</span><br>
-					<p style="color: #81817f;">시크릿 포레스트 카테고리 입니다</p> 
+			
+			<!--s: 카카오맵 API-->
+			<div id="apiMap">
+				<span style="font-size: 20px; font-weight: bold; font-family:'EuroRoman'; letter-spacing: 1.3px; color: #2b2a29be;">Where<br> Secret forest?</span><br>
+		  	<div id="map"> 
+					<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=57ef6e1db3d714fe31a3f93a9746b5c1"></script>
+					<!-- * 카카오맵 - 지도퍼가기 -->
+					<!-- 1. 지도 노드 -->
+					<div id="daumRoughmapContainer1681109280345" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+					<!--
+						2. 설치 스크립트
+						* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+					-->
+					<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+					<!-- 3. 실행 스크립트 -->
+					<script charset="UTF-8">
+						new daum.roughmap.Lander({
+							"timestamp" : "1681109280345",
+							"key" : "2edvi",
+							"mapWidth" : "900",
+							"mapHeight" : "440"
+						}).render();
+					</script>
+				</div>	
+				<div class="mapText">
+					<span style="font-size: 18px; font-weight: bold; font-family:'EuroRoman'; letter-spacing: 1.3px; color: #2b2a29be;">Secret forest</span><br>
+					<span style="font-size: 14px; font-weight: bold; font-family:'EuroRoman'; letter-spacing: 1.3px; color: #2b2a29be;">031-333-3333</span><br><br>
+					<span style="font-size: 14px; font-weight: bold; font-family:'EuroRoman'; letter-spacing: 1.3px; color: #2b2a29be;">
+						영업시간<br> 월~금 09:00 ~ 21:50 <br></span><br>
+				  <span style="font-size: 14px; font-weight: bold; font-family:'EuroRoman'; letter-spacing: 1.3px; color: #be8c1ef8;">
+						휴무 : 토,일요일 공휴일<br>
+				 </span>
 				</div>
+		  </div>	
+			<!--e: 카카오맵 API-->
+
+
+		 <!-- s: 카테고리 -->
+		 <div class="categoryProd.Box">
+				<span style="font-size: 20px; font-weight: bold; font-family:'EuroRoman'; letter-spacing: 1.3px; color: #2b2a29be;">Category forest</span><br>
 				<div class="imageBox">
 					<table>
 						<tr>
@@ -61,17 +98,16 @@
 					</table>
 				</div>
 		 </div>	
-
+		 <!-- e: 카테고리 -->
 
 		 <div id="simpleOrder">
-				<div class="simpleOrderText">
-					<span style="font-weight: bold; font-size: 22px; color: #2b2a29;">간편 취향 TEST</span><br>
-					<p style="color: #81817f;">나에게, 소중한 그 사람에게는 어떤 꽃이 어울릴까?</p> 
-				</div>
 			 <div id="simpleOrderBox">
+				<span style="font-size: 20px; font-weight: bold; font-family:'EuroRoman'; letter-spacing: 1.3px; color: #2b2a29be;">Special forest</span><br>
+				 <div class="simpleOrderImg"><img src="resources/image/etc/main_photo.png"></div>
 				 <div class="simpleOrderTo">
 						<table>
-							<legend>------------------------------<h4>취향을 선택해 보세요</h4>------------------------------</legend>
+							<br>
+							<legend><h4> 어떤 꽃을 고를지 모르겠다면? 취향을 선택해 보세요</h4></legend>
 							<tr>
 								<td>
 									<input type='radio'id="simpleTest" onclick="changeImageRose()" name='simpleTest'
@@ -81,9 +117,9 @@
 									<input type='radio' id="simpleTest" onclick="changeImageDry()" name='simpleTest'
 										value='/resources/image/prod_category/simpleTest/dry.JPG'>&nbsp;귀찮은건 질색! 심플하고 깔끔한 분위기를 선호한다<br><br>
 									<input type='radio' id="simpleTest" onclick="changeImageAir()" name='simpleTest'
-										value='/resources/image/prod_category/simpleTest/air.JPG'>&nbsp;맑은 공기를 만끽하러 여행을 다닌다<br><br>
+										value='/resources/image/prod_category/simpleTest/air.JPG'>&nbsp;맑은 공기를 만끽하러 정적인 숲으로 여행을 다닌다<br><br>
 									<input type='radio' id="simpleTest" onclick="changeImageTropical()" name='simpleTest'
-										value='/resources/image/prod_category/simpleTest/tropical.JPG'>&nbsp;북유럽풍 카페에서 커피한잔의 여유를 즐긴다<br>
+										value='/resources/image/prod_category/simpleTest/tropical.JPG'>&nbsp;북유럽풍 카페에서 커피 한 잔의 여유를 즐긴다<br>
 								</td>
 								<script>	
 								function changeImageRose(){
@@ -105,7 +141,6 @@
 							</tr>
 						</table>
 			   </div>
-				 
 					<div id="imgBox">
 						<IMG id="myImg" src="/resources/image/prod_category/simpleTest/basic.JPG">
 					</div>
@@ -113,8 +148,8 @@
 			</div>
 	    <div id="banner">
 	      <div class="simpleOrderText">
-            <span style="font-weight: bold; font-size: 22px; color: #2b2a29;">빠른 배송 서비스</span><br>
-            <p style="color: #81817f;">전국 어디에서든 다음날 바로 받아볼 수 있는 특별한 배송 서비스를 이용해 보세요</p> 
+					<span style="font-size: 20px; font-weight: bold; font-family:'EuroRoman'; letter-spacing: 1.3px; color: #2b2a29be;">Quick Delivery Service</span><br>
+					<p style="color: #81817f;">빠르고 정확한 시크릿 포레스트만의 배송 서비스를 이용해 보세요</p> 
           </div>
 	     <img src="resources/image/etc/mainBanner.JPG">
 	   </div>
